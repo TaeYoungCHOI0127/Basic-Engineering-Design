@@ -1,0 +1,65 @@
+1. strlen()
+#include <stdio.h> 
+#include <string.h>
+
+int main(void)
+{  
+    char a[20] = "the fake programmer";
+    printf("문자열의 길이: %d\n", strlen(a));
+}
+
+////////////////////////////////////////////////////////////////
+
+2. strcmp()
+#include <stdio.h>
+#include <string.h>
+
+int main(void) {  
+    char a[20] = "the fake programmer";
+    char b[20] = "YoHaBin Lim";
+    printf("두 배열의 사전순 비교: %d\n", strcmp(a, b));
+}
+
+////////////////////////////////////////////////////////////////
+
+3. strcpy()
+#define _CRT_SECURE_NO_WARNINGS
+#include <stdio.h>
+#include <string.h>
+
+
+int main(void)
+{
+    char a[20] = "the fake programmer";
+    char b[20] = "YoHaBin Lim";
+    strcpy(a, b);
+    printf("복사된 문자열: %s \n", a);
+}
+
+////////////////////////////////////////////////////////////////
+
+4. strcat()
+#include <stdio.h>
+#include <string.h>
+
+int main(void)
+{  
+    char a[30] = "the fake programmer ";
+    char b[20] = "YoHaBin Lim";
+    strcat(a, b);
+    printf("합쳐진 결과 문자열: %s \n", a);
+}
+
+////////////////////////////////////////////////////////////////
+
+5. strstr()
+#define _CRT_SECURE_NO_WARNINGS
+#include <stdio.h>
+#include <string.h>
+
+int main(void)
+{  
+    char a[20] = "the fake programmer";
+    char b[20] = "fake";
+    printf("찾은 문자열: %s \n", strstr(a, b));
+}
